@@ -12,10 +12,10 @@ And the best thing about all these Jobs is that it all will be automatically tri
 
 # How to Create this Project
 The very 1st thing would be setting up Git, Jenkins and Docker in Your System.
-In Job-1's execute shell write
-  sudo cp -rvf * /name_of_your_WorkspaceFolder and then save it.
-In Job-2's execute shell write,
-  if sudo docker container ls | grep production
+In Job-1's execute shell write<br>
+  sudo cp -rvf * /name_of_your_WorkspaceFolder and then save it.<br>
+In Job-2's execute shell write,<br>
+  if sudo docker container ls | grep production<br>
   then
   sudo docker conatiner rm -f production
   else
