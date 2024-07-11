@@ -12,24 +12,24 @@ And the best thing about all these Jobs is that it all will be automatically tri
 
 # How to Create this Project
 The very 1st thing would be setting up Git, Jenkins and Docker in Your System.
-In Job-1's execute shell write<br>
-  sudo cp -rvf * /name_of_your_WorkspaceFolder and then save it.<br>
-In Job-2's execute shell write,<br>
-  if sudo docker container ls | grep production<br>
-  then
-  sudo docker conatiner rm -f production
-  else
-  sudo docker dun -dit -p 8081:80 -v/name_of_your_WorkspaceFolder:/usr/local/apache2/htdocs --name production httpd fi" and then save it and go and create Job-3
-In Job-3's execute Shell write
-  status=$(curl -o Your_SysIP:8081/)
-  if[[ $status == 200 ]]
-  then
-  echo "Successfull"
-  exit 0
-  else
-  echo "Error"
-  exit 1
-  fi and then save it and come out of Job-3
+In Job-1's execute shell write<br><br>
+  sudo cp -rvf * /name_of_your_WorkspaceFolder and then save it.<br><br>
+In Job-2's execute shell write,<br><br>
+  if sudo docker container ls | grep production<br><br>
+  then<br><br>
+  sudo docker conatiner rm -f production<br><br>
+  else<br><br>
+  sudo docker dun -dit -p 8081:80 -v/name_of_your_WorkspaceFolder:/usr/local/apache2/htdocs --name production httpd fi" and then save it and go and create Job-3<br><br>
+In Job-3's execute Shell write<br><br>
+  status=$(curl -o Your_SysIP:8081/)<br><br>
+  if[[ $status == 200 ]]<br><br>
+  then<br><br>
+  echo "Successfull"<br><br>
+  exit 0<br><br>
+  else<br><br>
+  echo "Error"<br><br>
+  exit 1<br><br>
+  fi and then save it and come out of Job-3<br><br>
   
 After Writing the codes, the next task will be to link all these using build Pipeline so that at one go all will Jobs run and and it will be easy to monitor. Before creating build ppipeline we need to set build triggers such that when Job1 will run, automatically it will triggered Job2 and Job3. Job1 --> Job2 --> Job3
 
