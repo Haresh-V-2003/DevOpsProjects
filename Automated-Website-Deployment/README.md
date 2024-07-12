@@ -15,7 +15,7 @@ The very 1st thing would be setting up Git, Jenkins and Docker in Your System.
 In Job-1's execute shell write<br><br>
   <code>sudo cp -rvf * /name_of_your_WorkspaceFolder</code> and then save it.<br><br>
 In Job-2's execute shell write,<br><br>
-  if sudo docker container ls | grep production<br><br>
+  <code>if sudo docker container ls | grep production</code><br><br>
   then<br><br>
   sudo docker conatiner rm -f production<br><br>
   else<br><br>
