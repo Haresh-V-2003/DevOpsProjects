@@ -19,7 +19,7 @@ In Job-2's execute shell write,<br><br>
   <code>then</code><br><br>
   <code>sudo docker conatiner rm -f production</code><br><br>
   <code>else</code><br><br>
-  sudo docker dun -dit -p 8081:80 -v/name_of_your_WorkspaceFolder:/usr/local/apache2/htdocs --name production httpd fi" and then save it and go and create Job-3<br><br>
+  <code>sudo docker dun -dit -p 8081:80 -v/name_of_your_WorkspaceFolder:/usr/local/apache2/htdocs --name production httpd fi" and then save it and go and create Job-3</code><br><br>
 In Job-3's execute Shell write<br><br>
   status=$(curl -o Your_SysIP:8081/)<br><br>
   if[[ $status == 200 ]]<br><br>
