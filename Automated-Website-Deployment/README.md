@@ -23,7 +23,7 @@ In Job-2's execute shell write,<br><br>
 In Job-3's execute Shell write<br><br>
   <code>status=$(curl -o Your_SysIP:8081/)</code><br><br>
   <code>if[[ $status == 200 ]]</code><br><br>
-  then<br><br>
+  <code>then<br><br></code>
   echo "Successfull"<br><br>
   exit 0<br><br>
   else<br><br>
