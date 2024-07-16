@@ -31,7 +31,7 @@ In Job-3's execute Shell write<br><br>
   exit 1<br><br>
   fi and then save it and come out of Job-3<br><br>
   
-After Writing the codes, the next task will be to link all these using build Pipeline so that at one go all will Jobs run and and it will be easy to monitor. Before creating build ppipeline we need to set build triggers such that when Job1 will run, automatically it will triggered Job2 and Job3. Job1 --> Job2 --> Job3
+After Writing the codes, the next task will be to link all these using build Pipeline so that at one go all will Jobs run and and it will be easy to monitor. Before creating build ppipeline we need to set build triggers such that when Job1 will run, automatically it will triggered Job2 and Job3.<br> Job1 --> Job2 --> Job3
 
 
 Now as you have set the triggers, to each job, now it's time to create a pipeline so that we can easliy manage the whole CI/CD Pipeline. If you don't know how to set-up Build pipeline, then you just need to download the Build Pipeline Plugin from Plugin Manager in Jenkins and then I have uploaded the images for your convienent in image folder with names pipeline-1 and pipeline-2 for creating a pipeline for any project. If all the three Jobs will run succesfully then you will get green color.
