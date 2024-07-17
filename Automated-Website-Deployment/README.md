@@ -26,7 +26,7 @@ In Job-3's execute Shell write<br><br>
   <code>then<br><br></code>
   <code>echo "Successfull"</code><br><br>
   <code>exit 0</code><br><br>
-  else<br><br>
+  <code>else</code><br><br>
   echo "Error"<br><br>
   exit 1<br><br>
   fi and then save it and come out of Job-3<br><br>
