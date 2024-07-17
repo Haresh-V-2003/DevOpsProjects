@@ -25,7 +25,7 @@ In Job-3's execute Shell write<br><br>
   <code>if[[ $status == 200 ]]</code><br><br>
   <code>then<br><br></code>
   <code>echo "Successfull"</code><br><br>
-  exit 0<br><br>
+  <code>exit 0</code><br><br>
   else<br><br>
   echo "Error"<br><br>
   exit 1<br><br>
