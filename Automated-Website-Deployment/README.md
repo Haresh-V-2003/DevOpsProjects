@@ -29,7 +29,7 @@ In Job-3's execute Shell write<br><br>
   <code>else</code><br><br>
   <code>echo "Error"</code><br><br>
   <code>exit 1</code><br><br>
-  fi and then save it and come out of Job-3<br><br>
+  <code>fi and then save it and come out of Job-3<br><br>
   
 After Writing the codes, the next task will be to link all these using build Pipeline so that at one go all will Jobs run and and it will be easy to monitor. Before creating build ppipeline we need to set build triggers such that when Job1 will run, automatically it will triggered Job2 and Job3.<br> Job1 --> Job2 --> Job3
 
