@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: <dockerhub-username>/<repository-name>:<image-tag>
+        image: haresh2003/monitoring-app:latest
         resources:
           limits:
             memory: "128Mi"
