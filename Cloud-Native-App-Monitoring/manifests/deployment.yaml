@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: <dockerhub-username>/<repository-name>:<image-tag>
+        image: <dockerhub-username>/<repository-name>:<image-tag> #replace with your Docker credentials 
         resources:
           limits:
             memory: "128Mi"
